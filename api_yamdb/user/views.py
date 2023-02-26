@@ -1,3 +1,4 @@
+from api.permissions import IsAdmin
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -9,7 +10,6 @@ from rest_framework.status import (HTTP_200_OK, HTTP_400_BAD_REQUEST,
                                    HTTP_401_UNAUTHORIZED)
 from rest_framework_simplejwt.tokens import AccessToken
 
-from api.permissions import IsAdmin
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
 
 from .models import User
