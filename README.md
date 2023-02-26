@@ -1,4 +1,4 @@
 # yamdb_final
 yamdb_final
 
-(https://github.com/borrrv/yamdb_final/actions/workflows/yamdb_workflow/badge.svg?event=push)
+![yamdb_workflow](https://github.com/borrrv/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg?event=push)
