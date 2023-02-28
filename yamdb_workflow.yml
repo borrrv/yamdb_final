@@ -42,7 +42,7 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            tags: ${{ secrets.DOCKER_USERNAME }}/review:v2
+            tags: ${{ secrets.DOCKER_USERNAME }}/review:v1
             file: api_yamdb/Dockerfile
   deploy:
       runs-on: ubuntu-latest
