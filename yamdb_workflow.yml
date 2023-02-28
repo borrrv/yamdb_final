@@ -56,7 +56,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            cd /home/${{ secrets.USER }}/${{ github.repositpry_name}}
+            cd /home/${{ secrets.USER }}/${{ github.repository_name}}
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
