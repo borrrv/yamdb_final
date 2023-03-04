@@ -83,6 +83,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: '${{ github.workflow }} успешно выполнен! ${{ github.actor }} сделал push
-                  ${{ github.event.commits[0].message }}
+        message: '${{ github.workflow }} успешно выполнен! ${{ github.actor }} сделал push.
+                  Описание коммтиа: ${{ github.event.commits[0].message }}.
+                  ${{ github.retention_days }}
                   Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{github.sha}}'
